@@ -1,0 +1,41 @@
+name: my_diabetes_app
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0
+  sqflite: ^2.0.0+4  # O l'ultima versione disponibile
+  path: ^1.8.0
+  path_provider: ^2.0.11
+  intl: ^0.18.0 # o la versione più recente
+  flutter_secure_storage: ^8.0.0 # Indentazione corretta
+  http: ^0.13.0 # Usa l'ultima versione disponibile
+  flutter_launcher_icons: ^0.14.3
+  flutter_dotenv: ^5.0.2 # Sostituisci con l'ultima versione disponibile
+  encrypt: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/json/alimenti.json
+    
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "lib/img/logo.png"
+  adaptive_icon_foreground: "lib/img/logo.png" # Per le icone adattive Android
+  adaptive_icon_background: "#ffffff" # Sostituiscilo con il colore di sfondo desiderato
